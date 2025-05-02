@@ -13,6 +13,7 @@ return [
     'locale' => [
         'supported' => [
             'en' => ['name' => 'English', 'native' => 'English'],
+            'pt' => ['name' => 'Português', 'native' => 'Português'],
         ],
     ],
 
