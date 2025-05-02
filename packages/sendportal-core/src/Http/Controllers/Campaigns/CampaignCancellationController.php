@@ -29,7 +29,7 @@ class CampaignCancellationController extends Controller
     {
         $campaign = $this->campaignRepository->find(Sendportal::currentWorkspaceId(), $campaignId, ['status']);
 
-        return view('sendportal::campaigns.cancel', [
+        return view('campaigns.cancel', [
             'campaign' => $campaign,
         ]);
     }

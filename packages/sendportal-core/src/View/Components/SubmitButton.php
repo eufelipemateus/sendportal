@@ -29,6 +29,6 @@ class SubmitButton extends Component
      */
     public function render()
     {
-        return view('sendportal::components.submit-button');
+        return view('components.submit-button');
     }
 }

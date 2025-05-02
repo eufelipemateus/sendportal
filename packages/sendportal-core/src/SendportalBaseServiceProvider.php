@@ -25,14 +25,6 @@ class SendportalBaseServiceProvider extends ServiceProvider
                 __DIR__.'/../config/config.php' => config_path('sendportal.php'),
             ], 'sendportal-config');
 
-            $this->publishes([
-                __DIR__.'/../resources/views' => resource_path('views/vendor/sendportal'),
-            ], 'sendportal-views');
-
-            $this->publishes([
-                __DIR__.'/../resources/lang' => app()->langPath('vendor/sendportal'),
-            ], 'sendportal-lang');
-
             $this->commands([
                 CampaignDispatchCommand::class,
             ]);
@@ -43,9 +35,7 @@ class SendportalBaseServiceProvider extends ServiceProvider
             });
         }
 
-        $this->loadTranslationsFrom(__DIR__.'/../resources/lang', 'sendportal');
         $this->loadJsonTranslationsFrom(resource_path('lang/vendor/sendportal'));
-        $this->loadViewsFrom(__DIR__.'/../resources/views', 'sendportal');
         $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
     }
 

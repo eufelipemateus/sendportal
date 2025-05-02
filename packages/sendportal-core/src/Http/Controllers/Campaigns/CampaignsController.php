@@ -65,7 +65,7 @@ class CampaignsController extends Controller
         $params = ['draft' => true];
         $campaigns = $this->campaigns->paginate($workspaceId, 'created_atDesc', ['status'], 25, $params);
 
-        return view('sendportal::campaigns.index', [
+        return view('campaigns.index', [
             'campaigns' => $campaigns,
             'campaignStats' => $this->campaignStatisticsService->getForPaginator($campaigns, $workspaceId),
         ]);
@@ -80,7 +80,7 @@ class CampaignsController extends Controller
         $params = ['sent' => true];
         $campaigns = $this->campaigns->paginate($workspaceId, 'created_atDesc', ['status'], 25, $params);
 
-        return view('sendportal::campaigns.index', [
+        return view('campaigns.index', [
             'campaigns' => $campaigns,
             'campaignStats' => $this->campaignStatisticsService->getForPaginator($campaigns, $workspaceId),
         ]);
@@ -99,7 +99,7 @@ class CampaignsController extends Controller
                 return $emailService;
             });
 
-        return view('sendportal::campaigns.create', compact('templates', 'emailServices'));
+        return view('campaigns.create', compact('templates', 'emailServices'));
     }
 
     /**
@@ -120,7 +120,7 @@ class CampaignsController extends Controller
     {
         $campaign = $this->campaigns->find(Sendportal::currentWorkspaceId(), $id);
 
-        return view('sendportal::campaigns.show', compact('campaign'));
+        return view('campaigns.show', compact('campaign'));
     }
 
     /**
@@ -137,7 +137,7 @@ class CampaignsController extends Controller
             });
         $templates = [null => '- None -'] + $this->templates->pluck($workspaceId);
 
-        return view('sendportal::campaigns.edit', compact('campaign', 'emailServices', 'templates'));
+        return view('campaigns.edit', compact('campaign', 'emailServices', 'templates'));
     }
 
     /**
@@ -170,7 +170,7 @@ class CampaignsController extends Controller
 
         $tags = $this->tags->all(Sendportal::currentWorkspaceId(), 'name');
 
-        return view('sendportal::campaigns.preview', compact('campaign', 'tags', 'subscriberCount'));
+        return view('campaigns.preview', compact('campaign', 'tags', 'subscriberCount'));
     }
 
     /**
@@ -186,7 +186,7 @@ class CampaignsController extends Controller
             return redirect()->route('sendportal.campaigns.reports.index', $id);
         }
 
-        return view('sendportal::campaigns.status', [
+        return view('campaigns.status', [
             'campaign' => $campaign,
             'campaignStats' => $this->campaignStatisticsService->getForCampaign($campaign, $workspaceId),
         ]);

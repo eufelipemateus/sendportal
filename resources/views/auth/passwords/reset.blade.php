@@ -1,4 +1,4 @@
-@extends('sendportal::layouts.base')
+@extends('layouts.base')
 
 @section('htmlBody')
 <div class="container">

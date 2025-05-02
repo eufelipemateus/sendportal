@@ -38,12 +38,12 @@ class TemplatesController extends Controller
     {
         $templates = $this->templates->paginate(Sendportal::currentWorkspaceId(), 'name');
 
-        return view('sendportal::templates.index', compact('templates'));
+        return view('templates.index', compact('templates'));
     }
 
     public function create(): View
     {
-        return view('sendportal::templates.create');
+        return view('templates.create');
     }
 
     /**
@@ -66,7 +66,7 @@ class TemplatesController extends Controller
     {
         $template = $this->templates->find(Sendportal::currentWorkspaceId(), $id);
 
-        return view('sendportal::templates.edit', compact('template'));
+        return view('templates.edit', compact('template'));
     }
 
     /**

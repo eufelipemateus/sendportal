@@ -43,6 +43,6 @@ class TextField extends Component
      */
     public function render()
     {
-        return view('sendportal::components.text-field');
+        return view('components.text-field');
     }
 }
