@@ -33,10 +33,6 @@ class SendportalBaseServiceProvider extends ServiceProvider
                 __DIR__.'/../resources/lang' => app()->langPath('vendor/sendportal'),
             ], 'sendportal-lang');
 
-            $this->publishes([
-                __DIR__.'/../public' => public_path('vendor/sendportal'),
-            ], 'sendportal-assets');
-
             $this->commands([
                 CampaignDispatchCommand::class,
             ]);
