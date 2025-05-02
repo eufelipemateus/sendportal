@@ -36,7 +36,6 @@ class SendportalBaseServiceProvider extends ServiceProvider
         }
 
         $this->loadJsonTranslationsFrom(resource_path('lang/vendor/sendportal'));
-        $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
     }
 
     /**
