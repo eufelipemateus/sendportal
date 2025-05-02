@@ -2,23 +2,22 @@
 
 declare(strict_types=1);
 
-namespace Sendportal\Base\Database\Factories;
+namespace Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Sendportal\Base\Facades\Sendportal;
-use Sendportal\Base\Models\Template;
+use Sendportal\Base\Models\Tag;
 
-class TemplateFactory extends Factory
+class TagFactory extends Factory
 {
     /** @var string */
-    protected $model = Template::class;
+    protected $model = Tag::class;
 
     public function definition(): array
     {
         return [
-            'name' => $this->faker->word(),
             'workspace_id' => Sendportal::currentWorkspaceId(),
-            'content' => '{{content}}'
+            'name' => ucwords($this->faker->unique()->word())
         ];
     }
 }
