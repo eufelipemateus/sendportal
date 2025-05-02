@@ -1,5 +1,6 @@
 <?php
 
+
 return [
 
     /*
@@ -165,6 +166,8 @@ return [
         /*
          * Package Service Providers...
          */
+        Sendportal\Base\Providers\SendportalAppServiceProvider::class,
+        Sendportal\Base\SendportalBaseServiceProvider::class,
 
         /*
          * Application Service Providers...
