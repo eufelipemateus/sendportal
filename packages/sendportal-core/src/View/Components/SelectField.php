@@ -66,6 +66,6 @@ class SelectField extends Component
      */
     public function render()
     {
-        return view('sendportal::components.select-field');
+        return view('components.select-field');
     }
 }

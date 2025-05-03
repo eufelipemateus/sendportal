@@ -43,6 +43,6 @@ class CheckboxField extends Component
      */
     public function render()
     {
-        return view('sendportal::components.checkbox-field');
+        return view('components.checkbox-field');
     }
 }

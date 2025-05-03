@@ -38,7 +38,7 @@ class SubscribersImportController extends Controller
     {
         $tags = $tagRepo->pluck(Sendportal::currentWorkspaceId(), 'name', 'id');
 
-        return view('sendportal::subscribers.import', compact('tags'));
+        return view('subscribers.import', compact('tags'));
     }
 
     /**

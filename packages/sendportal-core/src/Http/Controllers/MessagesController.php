@@ -58,7 +58,7 @@ class MessagesController extends Controller
             $params
         );
 
-        return view('sendportal::messages.index', compact('messages'));
+        return view('messages.index', compact('messages'));
     }
 
     /**
@@ -76,7 +76,7 @@ class MessagesController extends Controller
             ['draft' => true]
         );
 
-        return view('sendportal::messages.index', compact('messages'));
+        return view('messages.index', compact('messages'));
     }
 
     /**
@@ -91,7 +91,7 @@ class MessagesController extends Controller
         $content = $this->mergeContentService->handle($message);
         $subject = $this->mergeSubjectService->handle($message);
 
-        return view('sendportal::messages.show', compact('content', 'message', 'subject'));
+        return view('messages.show', compact('content', 'message', 'subject'));
     }
 
     /**

@@ -25,7 +25,7 @@ class TestEmailServiceController extends Controller
     {
         $emailService = $this->emailServices->find(Sendportal::currentWorkspaceId(), $emailServiceId);
 
-        return view('sendportal::email_services.test', compact('emailService'));
+        return view('email_services.test', compact('emailService'));
     }
 
     /**
