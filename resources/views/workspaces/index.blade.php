@@ -1,4 +1,4 @@
-@extends('sendportal::layouts.app')
+@extends('layouts.app')
 
 @section('heading')
     {{ __('Workspaces') }}

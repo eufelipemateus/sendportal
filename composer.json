@@ -51,10 +51,7 @@
             "App\\": "app/",
             "Database\\Factories\\": "database/factories/",
             "Database\\Seeders\\": "database/seeders/",
-            "Sendportal\\Base\\": "packages/sendportal-core/src/",
-            "Sendportal\\Base\\Database\\Factories\\": "database/factories/",
-            "Sendportal\\Base\\Database\\Seeders\\": "database/seeders/"
-
+            "Sendportal\\Base\\": "packages/sendportal-core/src/"
         }
     },
     "autoload-dev": {

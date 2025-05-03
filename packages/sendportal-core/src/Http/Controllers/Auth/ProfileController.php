@@ -13,12 +13,12 @@ class ProfileController extends Controller
 {
     public function show(): View
     {
-        return view('sendportal::profile.show');
+        return view('profile.show');
     }
 
     public function edit(): View
     {
-        return view('sendportal::profile.edit');
+        return view('profile.edit');
     }
 
     public function update(ProfileUpdateRequest $request): RedirectResponse

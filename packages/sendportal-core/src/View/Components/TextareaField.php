@@ -34,6 +34,6 @@ class TextareaField extends Component
      */
     public function render()
     {
-        return view('sendportal::components.textarea-field');
+        return view('components.textarea-field');
     }
 }

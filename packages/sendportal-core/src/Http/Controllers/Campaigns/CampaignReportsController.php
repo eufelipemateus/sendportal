@@ -61,7 +61,7 @@ class CampaignReportsController extends Controller
             'chartData' => json_encode(Arr::get($presenterData['chartData'], 'data', [])),
         ];
 
-        return view('sendportal::campaigns.reports.index', $data);
+        return view('campaigns.reports.index', $data);
     }
 
     /**
@@ -84,7 +84,7 @@ class CampaignReportsController extends Controller
 
         $messages = $this->messageRepo->recipients(Sendportal::currentWorkspaceId(), Campaign::class, $id);
 
-        return view('sendportal::campaigns.reports.recipients', compact('campaign', 'messages'));
+        return view('campaigns.reports.recipients', compact('campaign', 'messages'));
     }
 
     /**
@@ -108,7 +108,7 @@ class CampaignReportsController extends Controller
 
         $messages = $this->messageRepo->opens(Sendportal::currentWorkspaceId(), Campaign::class, $id);
 
-        return view('sendportal::campaigns.reports.opens', compact('campaign', 'messages', 'averageTimeToOpen'));
+        return view('campaigns.reports.opens', compact('campaign', 'messages', 'averageTimeToOpen'));
     }
 
     /**
@@ -132,7 +132,7 @@ class CampaignReportsController extends Controller
 
         $messages = $this->messageRepo->clicks(Sendportal::currentWorkspaceId(), Campaign::class, $id);
 
-        return view('sendportal::campaigns.reports.clicks', compact('campaign', 'messages', 'averageTimeToClick'));
+        return view('campaigns.reports.clicks', compact('campaign', 'messages', 'averageTimeToClick'));
     }
 
     /**
@@ -155,7 +155,7 @@ class CampaignReportsController extends Controller
 
         $messages = $this->messageRepo->bounces(Sendportal::currentWorkspaceId(), Campaign::class, $id);
 
-        return view('sendportal::campaigns.reports.bounces', compact('campaign', 'messages'));
+        return view('campaigns.reports.bounces', compact('campaign', 'messages'));
     }
 
     /**
@@ -178,6 +178,6 @@ class CampaignReportsController extends Controller
 
         $messages = $this->messageRepo->unsubscribes(Sendportal::currentWorkspaceId(), Campaign::class, $id);
 
-        return view('sendportal::campaigns.reports.unsubscribes', compact('campaign', 'messages'));
+        return view('campaigns.reports.unsubscribes', compact('campaign', 'messages'));
     }
 }

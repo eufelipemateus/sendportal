@@ -34,6 +34,6 @@ class FileField extends Component
      */
     public function render()
     {
-        return view('sendportal::components.file-field');
+        return view('components.file-field');
     }
 }

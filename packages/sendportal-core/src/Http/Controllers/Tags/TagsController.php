@@ -30,12 +30,12 @@ class TagsController extends Controller
     {
         $tags = $this->tagRepository->paginate(Sendportal::currentWorkspaceId(), 'name');
 
-        return view('sendportal::tags.index', compact('tags'));
+        return view('tags.index', compact('tags'));
     }
 
     public function create(): View
     {
-        return view('sendportal::tags.create');
+        return view('tags.create');
     }
 
     /**
@@ -55,7 +55,7 @@ class TagsController extends Controller
     {
         $tag = $this->tagRepository->find(Sendportal::currentWorkspaceId(), $id, ['subscribers']);
 
-        return view('sendportal::tags.edit', compact('tag'));
+        return view('tags.edit', compact('tag'));
     }
 
     /**

@@ -50,7 +50,7 @@ class DashboardController extends Controller
         $completedCampaigns = $this->campaigns->completedCampaigns($workspaceId, ['status']);
         $subscriberGrowthChart = $this->getSubscriberGrowthChart($workspaceId);
 
-        return view('sendportal::dashboard.index', [
+        return view('dashboard.index', [
             'recentSubscribers' => $this->subscribers->getRecentSubscribers($workspaceId),
             'completedCampaigns' => $completedCampaigns,
             'campaignStats' => $this->campaignStatisticsService->getForCollection($completedCampaigns, $workspaceId),
