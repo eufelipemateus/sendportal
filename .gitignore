@@ -18,4 +18,4 @@ resources/lang/vendor/
 resources/views/vendor/
 composer.lock
 phpunit.xml
-
+.phpunit.cache
