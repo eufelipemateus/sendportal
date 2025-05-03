@@ -171,7 +171,7 @@
 @endsection
 
 @push('js')
-    <script src="{{ asset('vendor/sendportal/js/Chart.bundle.min.js') }}"></script>
+    <script src="{{ asset('js/Chart.bundle.min.js') }}"></script>
 
     <script>
         $(function () {
