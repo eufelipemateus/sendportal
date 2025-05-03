@@ -50,7 +50,7 @@ class RegisterController extends Controller
                 ->with('error', __('The invitation is no longer valid.'));
         }
 
-        return view('sendportal::auth.register');
+        return view('auth.register');
     }
 
     protected function validator(array $data): ValidatorContract

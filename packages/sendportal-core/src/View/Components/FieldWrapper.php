@@ -51,6 +51,6 @@ class FieldWrapper extends Component
      */
     public function render()
     {
-        return view('sendportal::components.field-wrapper');
+        return view('components.field-wrapper');
     }
 }

@@ -28,6 +28,6 @@ class Label extends Component
      */
     public function render()
     {
-        return view('sendportal::components.label');
+        return view('components.label');
     }
 }
