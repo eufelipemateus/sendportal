@@ -8,7 +8,7 @@
 
 @section('content')
 
-    @component('sendportal::layouts.partials.card')
+    @component('layouts.partials.card')
         @slot('cardHeader', __('Edit Tag'))
 
         @slot('cardBody')

@@ -6,7 +6,7 @@
 
 @section('content')
 
-    @component('sendportal::layouts.partials.card')
+    @component('layouts.partials.card')
         @slot('cardHeader', __('Test Email Service') . ' : ' . $emailService->name)
 
         @slot('cardBody')

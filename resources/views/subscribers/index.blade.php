@@ -8,7 +8,7 @@
 
 @section('content')
 
-    @component('sendportal::layouts.partials.actions')
+    @component('layouts.partials.actions')
 
         @slot('left')
             <form action="{{ route('sendportal.subscribers.index') }}" method="GET" class="form-inline mb-3 mb-md-0">

@@ -26,7 +26,7 @@
         </div>
     @endif
 
-    @component('sendportal::layouts.partials.card')
+    @component('layouts.partials.card')
         @slot('cardHeader', __('Import via CSV file'))
 
         @slot('cardBody')

@@ -6,7 +6,7 @@
 
 @section('content')
 
-    @component('sendportal::layouts.partials.card')
+    @component('layouts.partials.card')
         @slot('cardHeader', __('Create Email Service'))
 
         @slot('cardBody')
