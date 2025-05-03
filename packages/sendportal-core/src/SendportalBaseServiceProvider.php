@@ -6,11 +6,6 @@ use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Support\ServiceProvider;
 use Sendportal\Base\Console\Commands\CampaignDispatchCommand;
-use Sendportal\Base\Providers\EventServiceProvider;
-use Sendportal\Base\Providers\FormServiceProvider;
-use Sendportal\Base\Providers\ResolverProvider;
-use Sendportal\Base\Providers\RouteServiceProvider;
-use Sendportal\Base\Providers\SendportalAppServiceProvider;
 use Sendportal\Base\Services\Sendportal;
 
 class SendportalBaseServiceProvider extends ServiceProvider
@@ -58,14 +53,7 @@ class SendportalBaseServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        // Providers.
-        $this->app->register(SendportalAppServiceProvider::class);
-        $this->app->register(EventServiceProvider::class);
-        $this->app->register(FormServiceProvider::class);
-        $this->app->register(RouteServiceProvider::class);
-        $this->app->register(ResolverProvider::class);
-
-        // Facade.
+         // Facade.
         $this->app->bind('sendportal', static function (Application $app) {
             return $app->make(Sendportal::class);
         });
