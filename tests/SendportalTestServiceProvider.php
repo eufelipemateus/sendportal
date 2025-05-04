@@ -4,7 +4,7 @@ namespace Tests;
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider;
-use Sendportal\Base\Facades\Sendportal;
+use App\Facades\Sendportal;
 
 class SendportalTestServiceProvider extends ServiceProvider
 {

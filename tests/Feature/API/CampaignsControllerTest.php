@@ -7,8 +7,8 @@ namespace Tests\Feature\API;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Support\Arr;
-use Sendportal\Base\Facades\Sendportal;
-use Sendportal\Base\Models\Campaign;
+use App\Facades\Sendportal;
+use App\Models\Campaign;
 use Symfony\Component\HttpFoundation\Response;
 use Tests\TestCase;
 

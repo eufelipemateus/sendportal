@@ -7,7 +7,7 @@ namespace Tests\Feature\Webhooks;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Support\Str;
-use Sendportal\Base\Models\Message;
+use App\Models\Message;
 use Tests\TestCase;
 
 class PostmarkWebhooksTest extends TestCase

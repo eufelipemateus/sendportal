@@ -10,7 +10,7 @@
                 <i class="fa-fw fas fa-envelope mr-2"></i><span>{{ __('Campaigns') }}</span>
             </a>
         </li>
-        @if (\Sendportal\Base\Facades\Helper::isPro())
+        @if (\App\Facades\Helper::isPro())
         <li class="nav-item {{ request()->is('*automations*') ? 'active' : '' }}">
             <a class="nav-link" href="{{ route('sendportal.automations.index') }}">
                 <i class="fa-fw fas fa-sync-alt mr-2"></i><span>{{ __('Automations') }}</span>
@@ -38,7 +38,7 @@
             </a>
         </li>
 
-        {!! \Sendportal\Base\Facades\Sendportal::sidebarHtmlContent() !!}
+        {!! \App\Facades\Sendportal::sidebarHtmlContent() !!}
 
     </ul>
 </div>

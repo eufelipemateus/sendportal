@@ -8,12 +8,12 @@ use Carbon\CarbonImmutable;
 use Carbon\CarbonInterval;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Collection;
-use Sendportal\Base\Facades\Sendportal;
-use Sendportal\Base\Models\Campaign;
-use Sendportal\Base\Models\Message;
-use Sendportal\Base\Repositories\Messages\MessageTenantRepositoryInterface;
-use Sendportal\Base\Repositories\Messages\MySqlMessageTenantRepository;
-use Sendportal\Base\Repositories\Messages\PostgresMessageTenantRepository;
+use App\Facades\Sendportal;
+use App\Models\Campaign;
+use App\Models\Message;
+use App\Repositories\Messages\MessageTenantRepositoryInterface;
+use App\Repositories\Messages\MySqlMessageTenantRepository;
+use App\Repositories\Messages\PostgresMessageTenantRepository;
 use Tests\TestCase;
 
 class MessageTenantRepositoryTest extends TestCase

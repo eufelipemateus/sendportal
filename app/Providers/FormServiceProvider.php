@@ -4,14 +4,14 @@ namespace App\Providers;
 
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider;
-use Sendportal\Base\View\Components\CheckboxField;
-use Sendportal\Base\View\Components\FieldWrapper;
-use Sendportal\Base\View\Components\FileField;
-use Sendportal\Base\View\Components\Label;
-use Sendportal\Base\View\Components\SelectField;
-use Sendportal\Base\View\Components\SubmitButton;
-use Sendportal\Base\View\Components\TextareaField;
-use Sendportal\Base\View\Components\TextField;
+use App\View\Components\CheckboxField;
+use App\View\Components\FieldWrapper;
+use App\View\Components\FileField;
+use App\View\Components\Label;
+use App\View\Components\SelectField;
+use App\View\Components\SubmitButton;
+use App\View\Components\TextareaField;
+use App\View\Components\TextField;
 
 class FormServiceProvider extends ServiceProvider
 {

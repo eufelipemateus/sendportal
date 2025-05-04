@@ -7,7 +7,7 @@ namespace App\Models;
 use Carbon\Carbon;
 use Database\Factories\ApiTokenFactory;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Sendportal\Base\Models\BaseModel;
+use App\Models\BaseModel;
 
 /**
  * @property int $id

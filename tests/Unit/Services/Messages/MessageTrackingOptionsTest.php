@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace Tests\Unit\Services\Messages;
 
-use Sendportal\Base\Models\Campaign;
-use Sendportal\Base\Models\Message;
-use Sendportal\Base\Services\Messages\MessageTrackingOptions;
+use App\Models\Campaign;
+use App\Models\Message;
+use App\Services\Messages\MessageTrackingOptions;
 use Tests\TestCase;
 
 class MessageTrackingOptionsTest extends TestCase

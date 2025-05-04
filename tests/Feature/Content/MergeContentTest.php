@@ -6,12 +6,12 @@ namespace Tests\Feature\Content;
 
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\WithFaker;
-use Sendportal\Base\Facades\Sendportal;
-use Sendportal\Base\Models\Campaign;
-use Sendportal\Base\Models\Message;
-use Sendportal\Base\Models\Subscriber;
-use Sendportal\Base\Models\Template;
-use Sendportal\Base\Services\Content\MergeContentService;
+use App\Facades\Sendportal;
+use App\Models\Campaign;
+use App\Models\Message;
+use App\Models\Subscriber;
+use App\Models\Template;
+use App\Services\Content\MergeContentService;
 use Tests\TestCase;
 
 class MergeContentTest extends TestCase

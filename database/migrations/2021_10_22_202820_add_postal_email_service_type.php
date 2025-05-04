@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Support\Facades\DB;
-use Sendportal\Base\Models\EmailServiceType;
+use App\Models\EmailServiceType;
 
 class AddPostalEmailServiceType extends Migration
 {

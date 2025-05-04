@@ -6,13 +6,13 @@ namespace Tests\Feature\API;
 
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Mockery;
-use Sendportal\Base\Facades\Sendportal;
-use Sendportal\Base\Interfaces\QuotaServiceInterface;
-use Sendportal\Base\Models\Campaign;
-use Sendportal\Base\Models\CampaignStatus;
-use Sendportal\Base\Models\EmailService;
-use Sendportal\Base\Models\EmailServiceType;
-use Sendportal\Base\Services\QuotaService;
+use App\Facades\Sendportal;
+use App\Interfaces\QuotaServiceInterface;
+use App\Models\Campaign;
+use App\Models\CampaignStatus;
+use App\Models\EmailService;
+use App\Models\EmailServiceType;
+use App\Services\QuotaService;
 use Symfony\Component\HttpFoundation\Response;
 use Tests\TestCase;
 

@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace App\Repositories;
 
 use App\Models\ApiToken;
-use Sendportal\Base\Repositories\BaseTenantRepository;
+use App\Repositories\BaseTenantRepository;
 
 class ApiTokenRepository extends BaseTenantRepository
 {

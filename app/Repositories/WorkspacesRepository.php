@@ -8,7 +8,7 @@ use App\Models\User;
 use App\Models\Workspace;
 use Exception;
 use Illuminate\Contracts\Pagination\LengthAwarePaginator;
-use Sendportal\Base\Repositories\BaseEloquentRepository;
+use App\Repositories\BaseEloquentRepository;
 
 class WorkspacesRepository extends BaseEloquentRepository
 {

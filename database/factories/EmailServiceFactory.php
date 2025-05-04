@@ -5,9 +5,9 @@ declare(strict_types=1);
 namespace Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
-use Sendportal\Base\Facades\Sendportal;
-use Sendportal\Base\Models\EmailService;
-use Sendportal\Base\Models\EmailServiceType;
+use App\Facades\Sendportal;
+use App\Models\EmailService;
+use App\Models\EmailServiceType;
 
 class EmailServiceFactory extends Factory
 {

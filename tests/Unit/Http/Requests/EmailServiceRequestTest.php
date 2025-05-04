@@ -8,8 +8,8 @@ use Illuminate\Contracts\Validation\Validator as ValidatorContract;
 use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Str;
-use Sendportal\Base\Http\Requests\EmailServiceRequest;
-use Sendportal\Base\Models\EmailServiceType;
+use App\Http\Requests\EmailServiceRequest;
+use App\Models\EmailServiceType;
 use Tests\TestCase;
 
 class EmailServiceRequestTest extends TestCase

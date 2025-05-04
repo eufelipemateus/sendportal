@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
-use Sendportal\Base\UpgradeMigration;
+use App\UpgradeMigration;
 
 class CreateTemplatesTable extends UpgradeMigration
 {

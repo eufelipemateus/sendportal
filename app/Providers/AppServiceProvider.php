@@ -11,7 +11,10 @@ use Illuminate\Pagination\Paginator;
 use Illuminate\Support\ServiceProvider;
 use Livewire\Livewire;
 use RuntimeException;
-use Sendportal\Base\Facades\Sendportal;
+use App\Console\Commands\CampaignDispatchCommand;
+use Illuminate\Console\Scheduling\Schedule;
+use App\Facades\Sendportal;
+
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -20,7 +23,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
-        //
+        //       
     }
 
     public function boot(): void
@@ -61,5 +64,20 @@ class AppServiceProvider extends ServiceProvider
         );
 
         Livewire::component('setup', Setup::class);
+
+        if ($this->app->runningInConsole()) {
+            $this->commands(
+                [
+                CampaignDispatchCommand::class,
+                ]
+            );
+
+            $this->app->booted(function () {
+                $schedule = $this->app->make(Schedule::class);
+                $schedule->command(CampaignDispatchCommand::class)->everyMinute()->withoutOverlapping();
+            });
+        }
+
     }
+
 }

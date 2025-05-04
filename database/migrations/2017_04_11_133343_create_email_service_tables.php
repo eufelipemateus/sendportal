@@ -3,8 +3,8 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Schema;
-use Sendportal\Base\Models\EmailServiceType;
-use Sendportal\Base\UpgradeMigration;
+use App\Models\EmailServiceType;
+use App\UpgradeMigration;
 
 class CreateEmailServiceTables extends UpgradeMigration
 {

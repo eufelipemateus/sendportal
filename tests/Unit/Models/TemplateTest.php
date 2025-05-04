@@ -5,8 +5,8 @@ declare(strict_types=1);
 namespace Tests\Unit\Models;
 
 use Illuminate\Foundation\Testing\RefreshDatabase;
-use Sendportal\Base\Models\Campaign;
-use Sendportal\Base\Models\Template;
+use App\Models\Campaign;
+use App\Models\Template;
 use Tests\TestCase;
 
 class TemplateTest extends TestCase

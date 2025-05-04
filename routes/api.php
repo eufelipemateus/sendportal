@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 use App\Http\Middleware\RequireWorkspace;
 use Illuminate\Support\Facades\Route;
-use Sendportal\Base\Facades\Sendportal;
+use App\Facades\Sendportal;
 
 Route::middleware([
     config('sendportal-host.throttle_middleware'),

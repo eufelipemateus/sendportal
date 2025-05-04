@@ -39,11 +39,11 @@
                                 <td>
                                     @if($subscriber->unsubscribed_at)
                                         <span class="badge badge-danger">{{ __('Unsubscribed') }}</span>
-                                        <span class="text-muted">{{ \Sendportal\Base\Models\UnsubscribeEventType::findById($subscriber->unsubscribe_event_id) }}
-                                            on {{ \Sendportal\Base\Facades\Helper::displayDate($subscriber->unsubscribed_at)->format('d M Y') }}
+                                        <span class="text-muted">{{ \App\Models\UnsubscribeEventType::findById($subscriber->unsubscribe_event_id) }}
+                                            on {{ \App\Facades\Helper::displayDate($subscriber->unsubscribed_at)->format('d M Y') }}
                                         </span>
                                     @else
-                                        <span class="badge badge-success">{{ __('Subscribed') }}</span> <span class="text-muted">{{ \Sendportal\Base\Facades\Helper::displayDate($subscriber->created_at) }}</span>
+                                        <span class="badge badge-success">{{ __('Subscribed') }}</span> <span class="text-muted">{{ \App\Facades\Helper::displayDate($subscriber->created_at) }}</span>
                                     @endif
                                 </td>
                             </tr>
@@ -91,7 +91,7 @@
                                 <a href="{{ route('sendportal.campaigns.reports.index', $message->source_id) }}">
                                     {{ $message->source->name }}
                                 </a>
-                            @elseif(\Sendportal\Base\Facades\Helper::isPro() && $message->isAutomation())
+                            @elseif(\App\Facades\Helper::isPro() && $message->isAutomation())
                                 <i class="fas fa-sync-alt color-gray-300"></i>
                                 <a href="{{ route('sendportal.automations.show', $message->source->automation_step->automation_id) }}">
                                     {{ $message->source->automation_step->automation->name }}

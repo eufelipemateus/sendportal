@@ -6,7 +6,7 @@ namespace App\Http\Middleware;
 
 use Closure;
 use RuntimeException;
-use Sendportal\Base\Facades\Sendportal;
+use App\Facades\Sendportal;
 
 class RequireWorkspace
 {

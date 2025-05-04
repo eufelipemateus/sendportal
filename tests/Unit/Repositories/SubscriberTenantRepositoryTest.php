@@ -6,9 +6,9 @@ namespace Tests\Unit\Repositories;
 
 use Carbon\CarbonPeriod;
 use Illuminate\Foundation\Testing\RefreshDatabase;
-use Sendportal\Base\Facades\Sendportal;
-use Sendportal\Base\Models\Subscriber;
-use Sendportal\Base\Repositories\Subscribers\SubscriberTenantRepositoryInterface;
+use App\Facades\Sendportal;
+use App\Models\Subscriber;
+use App\Repositories\Subscribers\SubscriberTenantRepositoryInterface;
 use Tests\SendportalTestSupportTrait;
 use Tests\TestCase;
 

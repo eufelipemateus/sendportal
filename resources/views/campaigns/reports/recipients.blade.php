@@ -27,11 +27,11 @@
                         <tr>
                             <td><a href="{{ route('sendportal.subscribers.show', $message->subscriber_id) }}">{{ $message->recipient_email }}</a></td>
                             <td>{{ $message->subject }}</td>
-                            <td>{{ \Sendportal\Base\Facades\Helper::displayDate($message->delivered_at) }}</td>
-                            <td>{{ \Sendportal\Base\Facades\Helper::displayDate($message->opened_at) }}</td>
-                            <td>{{ \Sendportal\Base\Facades\Helper::displayDate($message->clicked_at) }}</td>
-                            <td>{{ \Sendportal\Base\Facades\Helper::displayDate($message->bounced_at) }}</td>
-                            <td>{{ \Sendportal\Base\Facades\Helper::displayDate($message->complained_at) }}</td>
+                            <td>{{ \App\Facades\Helper::displayDate($message->delivered_at) }}</td>
+                            <td>{{ \App\Facades\Helper::displayDate($message->opened_at) }}</td>
+                            <td>{{ \App\Facades\Helper::displayDate($message->clicked_at) }}</td>
+                            <td>{{ \App\Facades\Helper::displayDate($message->bounced_at) }}</td>
+                            <td>{{ \App\Facades\Helper::displayDate($message->complained_at) }}</td>
                         </tr>
                     @empty
                         <tr>
