@@ -8,7 +8,7 @@ use App\Traits\HasSendportalCommandUtilities;
 use App\Traits\HasSendportalMigrationHandlers;
 use Illuminate\Database\Console\Migrations\BaseCommand;
 use Illuminate\Database\Migrations\Migrator;
-use Sendportal\Base\SendportalBaseServiceProvider;
+use App\SendportalBaseServiceProvider;
 
 class UpgradeApplication extends BaseCommand
 {

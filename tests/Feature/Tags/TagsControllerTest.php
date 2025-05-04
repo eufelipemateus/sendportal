@@ -6,9 +6,9 @@ namespace Tests\Feature\Tags;
 
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\WithFaker;
-use Sendportal\Base\Facades\Sendportal;
-use Sendportal\Base\Models\Subscriber;
-use Sendportal\Base\Models\Tag;
+use App\Facades\Sendportal;
+use App\Models\Subscriber;
+use App\Models\Tag;
 use Tests\TestCase;
 
 class TagsControllerTest extends TestCase

@@ -6,19 +6,20 @@ namespace App\Providers;
 
 use Illuminate\Foundation\Application;
 use Illuminate\Support\ServiceProvider;
-use Sendportal\Base\Interfaces\QuotaServiceInterface;
-use Sendportal\Base\Repositories\Campaigns\CampaignTenantRepositoryInterface;
-use Sendportal\Base\Repositories\Campaigns\MySqlCampaignTenantRepository;
-use Sendportal\Base\Repositories\Campaigns\PostgresCampaignTenantRepository;
-use Sendportal\Base\Repositories\Messages\MessageTenantRepositoryInterface;
-use Sendportal\Base\Repositories\Messages\MySqlMessageTenantRepository;
-use Sendportal\Base\Repositories\Messages\PostgresMessageTenantRepository;
-use Sendportal\Base\Repositories\Subscribers\MySqlSubscriberTenantRepository;
-use Sendportal\Base\Repositories\Subscribers\PostgresSubscriberTenantRepository;
-use Sendportal\Base\Repositories\Subscribers\SubscriberTenantRepositoryInterface;
-use Sendportal\Base\Services\Helper;
-use Sendportal\Base\Services\QuotaService;
-use Sendportal\Base\Traits\ResolvesDatabaseDriver;
+use App\Interfaces\QuotaServiceInterface;
+use App\Repositories\Campaigns\CampaignTenantRepositoryInterface;
+use App\Repositories\Campaigns\MySqlCampaignTenantRepository;
+use App\Repositories\Campaigns\PostgresCampaignTenantRepository;
+use App\Repositories\Messages\MessageTenantRepositoryInterface;
+use App\Repositories\Messages\MySqlMessageTenantRepository;
+use App\Repositories\Messages\PostgresMessageTenantRepository;
+use App\Repositories\Subscribers\MySqlSubscriberTenantRepository;
+use App\Repositories\Subscribers\PostgresSubscriberTenantRepository;
+use App\Repositories\Subscribers\SubscriberTenantRepositoryInterface;
+use App\Services\Helper;
+use App\Services\QuotaService;
+use App\Traits\ResolvesDatabaseDriver;
+use App\Services\Sendportal;
 
 class SendportalAppServiceProvider extends ServiceProvider
 {
@@ -60,9 +61,13 @@ class SendportalAppServiceProvider extends ServiceProvider
 
         $this->app->bind(QuotaServiceInterface::class, QuotaService::class);
 
+        $this->app->bind('sendportal', static function (Application $app) {
+            return $app->make(Sendportal::class);
+        });
+
         $this->app->singleton('sendportal.helper', function () {
             return new Helper();
-        });
+        });     
     }
 
     /**

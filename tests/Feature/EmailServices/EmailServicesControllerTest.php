@@ -7,10 +7,10 @@ namespace Tests\Feature\EmailServices;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Support\Str;
-use Sendportal\Base\Facades\Sendportal;
-use Sendportal\Base\Models\Campaign;
-use Sendportal\Base\Models\EmailService;
-use Sendportal\Base\Models\EmailServiceType;
+use App\Facades\Sendportal;
+use App\Models\Campaign;
+use App\Models\EmailService;
+use App\Models\EmailServiceType;
 use Tests\TestCase;
 
 class EmailServicesControllerTest extends TestCase

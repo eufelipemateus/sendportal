@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use Sendportal\Base\Services\ResolverService;
+use App\Services\ResolverService;
 
 class ResolverProvider extends ServiceProvider
 {

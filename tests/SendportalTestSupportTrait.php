@@ -4,11 +4,11 @@ declare(strict_types=1);
 
 namespace Tests;
 
-use Sendportal\Base\Facades\Sendportal;
-use Sendportal\Base\Models\Campaign;
-use Sendportal\Base\Models\EmailService;
-use Sendportal\Base\Models\Subscriber;
-use Sendportal\Base\Models\Tag;
+use App\Facades\Sendportal;
+use App\Models\Campaign;
+use App\Models\EmailService;
+use App\Models\Subscriber;
+use App\Models\Tag;
 
 trait SendportalTestSupportTrait
 {

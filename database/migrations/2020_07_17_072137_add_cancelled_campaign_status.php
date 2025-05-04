@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\DB;
-use Sendportal\Base\UpgradeMigration;
+use App\UpgradeMigration;
 
 class AddCancelledCampaignStatus extends UpgradeMigration
 {

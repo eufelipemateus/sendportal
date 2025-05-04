@@ -6,8 +6,8 @@ namespace App\Providers;
 
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
 use Illuminate\Support\Facades\Route;
-use Sendportal\Base\Routes\ApiRoutes;
-use Sendportal\Base\Routes\WebRoutes;
+use App\Routes\ApiRoutes;
+use App\Routes\WebRoutes;
 
 class RouteServiceProvider extends ServiceProvider
 {

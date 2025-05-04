@@ -7,10 +7,10 @@ namespace Tests\Feature\EmailServices;
 use Exception;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Mockery;
-use Sendportal\Base\Facades\Sendportal;
-use Sendportal\Base\Models\EmailService;
-use Sendportal\Base\Services\Messages\DispatchTestMessage;
-use Sendportal\Base\Services\Messages\MessageOptions;
+use App\Facades\Sendportal;
+use App\Models\EmailService;
+use App\Services\Messages\DispatchTestMessage;
+use App\Services\Messages\MessageOptions;
 use Tests\TestCase;
 
 class TestEmailServiceControllerTest extends TestCase

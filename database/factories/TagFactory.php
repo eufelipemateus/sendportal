@@ -5,8 +5,8 @@ declare(strict_types=1);
 namespace Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
-use Sendportal\Base\Facades\Sendportal;
-use Sendportal\Base\Models\Tag;
+use App\Facades\Sendportal;
+use App\Models\Tag;
 
 class TagFactory extends Factory
 {

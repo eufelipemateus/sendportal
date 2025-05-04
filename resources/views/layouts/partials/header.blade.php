@@ -8,7 +8,7 @@
 
         <h1 class="h3 mb-0">@yield('heading')</h1>
 
-        {!! \Sendportal\Base\Facades\Sendportal::headerHtmlContent() !!}
+        {!! \App\Facades\Sendportal::headerHtmlContent() !!}
 
     </header>
 </div>

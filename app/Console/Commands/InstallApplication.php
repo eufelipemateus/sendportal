@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Str;
 use RuntimeException;
-use Sendportal\Base\SendportalBaseServiceProvider;
+use App\SendportalBaseServiceProvider;
 
 class InstallApplication extends BaseCommand
 {

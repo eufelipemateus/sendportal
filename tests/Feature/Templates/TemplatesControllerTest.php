@@ -6,9 +6,9 @@ namespace Tests\Feature\Templates;
 
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\WithFaker;
-use Sendportal\Base\Facades\Sendportal;
-use Sendportal\Base\Models\Campaign;
-use Sendportal\Base\Models\Template;
+use App\Facades\Sendportal;
+use App\Models\Campaign;
+use App\Models\Template;
 use Tests\TestCase;
 
 class TemplatesControllerTest extends TestCase

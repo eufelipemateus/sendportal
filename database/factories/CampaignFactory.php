@@ -5,11 +5,11 @@ declare(strict_types=1);
 namespace Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
-use Sendportal\Base\Facades\Sendportal;
-use Sendportal\Base\Models\Campaign;
-use Sendportal\Base\Models\CampaignStatus;
-use Sendportal\Base\Models\EmailService;
-use Sendportal\Base\Models\Template;
+use App\Facades\Sendportal;
+use App\Models\Campaign;
+use App\Models\CampaignStatus;
+use App\Models\EmailService;
+use App\Models\Template;
 
 class CampaignFactory extends Factory
 {

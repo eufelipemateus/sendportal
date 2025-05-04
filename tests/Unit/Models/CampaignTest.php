@@ -5,11 +5,11 @@ declare(strict_types=1);
 namespace Tests\Unit\Models;
 
 use Illuminate\Foundation\Testing\RefreshDatabase;
-use Sendportal\Base\Facades\Sendportal;
-use Sendportal\Base\Models\Campaign;
-use Sendportal\Base\Models\Message;
-use Sendportal\Base\Models\Subscriber;
-use Sendportal\Base\Models\Tag;
+use App\Facades\Sendportal;
+use App\Models\Campaign;
+use App\Models\Message;
+use App\Models\Subscriber;
+use App\Models\Tag;
 use Tests\TestCase;
 
 class CampaignTest extends TestCase

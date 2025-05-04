@@ -5,8 +5,8 @@ declare(strict_types=1);
 namespace Tests\Feature\Campaigns;
 
 use Illuminate\Foundation\Testing\RefreshDatabase;
-use Sendportal\Base\Facades\Sendportal;
-use Sendportal\Base\Models\Campaign;
+use App\Facades\Sendportal;
+use App\Models\Campaign;
 use Tests\TestCase;
 
 class CampaignReportsControllerTest extends TestCase

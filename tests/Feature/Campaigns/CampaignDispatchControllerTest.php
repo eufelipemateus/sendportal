@@ -5,9 +5,9 @@ declare(strict_types=1);
 namespace Tests\Feature\Campaigns;
 
 use Illuminate\Foundation\Testing\RefreshDatabase;
-use Sendportal\Base\Facades\Sendportal;
-use Sendportal\Base\Models\Campaign;
-use Sendportal\Base\Models\Tag;
+use App\Facades\Sendportal;
+use App\Models\Campaign;
+use App\Models\Tag;
 use Tests\TestCase;
 
 class CampaignDispatchControllerTest extends TestCase

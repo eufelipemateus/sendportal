@@ -171,7 +171,6 @@ return [
         App\Providers\FormServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
         App\Providers\ResolverProvider::class,
-        Sendportal\Base\SendportalBaseServiceProvider::class,
 
         /*
          * Application Service Providers...

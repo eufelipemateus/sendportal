@@ -6,21 +6,21 @@ use Illuminate\Auth\Events\Registered;
 use Illuminate\Auth\Listeners\SendEmailVerificationNotification;
 
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
-use Sendportal\Base\Events\MessageDispatchEvent;
-use Sendportal\Base\Events\SubscriberAddedEvent;
-use Sendportal\Base\Events\Webhooks\MailgunWebhookReceived;
-use Sendportal\Base\Events\Webhooks\MailjetWebhookReceived;
-use Sendportal\Base\Events\Webhooks\PostalWebhookReceived;
-use Sendportal\Base\Events\Webhooks\PostmarkWebhookReceived;
-use Sendportal\Base\Events\Webhooks\SendgridWebhookReceived;
-use Sendportal\Base\Events\Webhooks\SesWebhookReceived;
-use Sendportal\Base\Listeners\MessageDispatchHandler;
-use Sendportal\Base\Listeners\Webhooks\HandleMailgunWebhook;
-use Sendportal\Base\Listeners\Webhooks\HandleMailjetWebhook;
-use Sendportal\Base\Listeners\Webhooks\HandlePostalWebhook;
-use Sendportal\Base\Listeners\Webhooks\HandlePostmarkWebhook;
-use Sendportal\Base\Listeners\Webhooks\HandleSendgridWebhook;
-use Sendportal\Base\Listeners\Webhooks\HandleSesWebhook;
+use App\Events\MessageDispatchEvent;
+use App\Events\SubscriberAddedEvent;
+use App\Events\Webhooks\MailgunWebhookReceived;
+use App\Events\Webhooks\MailjetWebhookReceived;
+use App\Events\Webhooks\PostalWebhookReceived;
+use App\Events\Webhooks\PostmarkWebhookReceived;
+use App\Events\Webhooks\SendgridWebhookReceived;
+use App\Events\Webhooks\SesWebhookReceived;
+use App\Listeners\MessageDispatchHandler;
+use App\Listeners\Webhooks\HandleMailgunWebhook;
+use App\Listeners\Webhooks\HandleMailjetWebhook;
+use App\Listeners\Webhooks\HandlePostalWebhook;
+use App\Listeners\Webhooks\HandlePostmarkWebhook;
+use App\Listeners\Webhooks\HandleSendgridWebhook;
+use App\Listeners\Webhooks\HandleSesWebhook;
 
 class EventServiceProvider extends ServiceProvider
 {

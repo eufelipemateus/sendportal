@@ -7,10 +7,10 @@ namespace Tests\Feature\Webhooks;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Support\Str;
-use Sendportal\Base\Models\Campaign;
-use Sendportal\Base\Models\Message;
-use Sendportal\Base\Models\Subscriber;
-use Sendportal\Base\Models\UnsubscribeEventType;
+use App\Models\Campaign;
+use App\Models\Message;
+use App\Models\Subscriber;
+use App\Models\UnsubscribeEventType;
 use Tests\TestCase;
 
 class MailjetWebhooksTest extends TestCase

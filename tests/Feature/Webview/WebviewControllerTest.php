@@ -5,9 +5,9 @@ declare(strict_types=1);
 namespace Tests\Feature\Webview;
 
 use Illuminate\Foundation\Testing\RefreshDatabase;
-use Sendportal\Base\Facades\Sendportal;
-use Sendportal\Base\Models\Campaign;
-use Sendportal\Base\Models\Message;
+use App\Facades\Sendportal;
+use App\Models\Campaign;
+use App\Models\Message;
 use Tests\TestCase;
 
 class WebviewControllerTest extends TestCase

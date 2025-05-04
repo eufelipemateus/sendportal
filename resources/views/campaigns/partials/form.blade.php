@@ -27,7 +27,7 @@
         $(function () {
             const smtp = {{
                 $emailServices->filter(function ($service) {
-                    return $service->type_id === \Sendportal\Base\Models\EmailServiceType::SMTP;
+                    return $service->type_id === \App\Models\EmailServiceType::SMTP;
                 })
                 ->pluck('id')
             }};
