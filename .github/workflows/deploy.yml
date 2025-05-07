@@ -93,7 +93,7 @@ jobs:
             php artisan down
 
       - name: 📂 Deploy with rsync
-        run: rsync -rav --delete ./  ${{secrets.SSH_USER}}@${{secrets.SSH_HOST}}:/tmp/pixelfed   #${{secrets.WORK_DIR}}
+        run: rsync -rav --delete ./  ${{secrets.SSH_USER}}@${{secrets.SSH_HOST}}:/tmp/${{ github.event.repository.name }}  #${{secrets.WORK_DIR}}
 
       - name: Restart Apps
         uses: appleboy/ssh-action@v1.0.0
