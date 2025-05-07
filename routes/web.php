@@ -6,7 +6,7 @@ use App\Http\Middleware\RequireWorkspace;
 use Illuminate\Routing\Router;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
-use Sendportal\Base\Facades\Sendportal;
+use App\Facades\Sendportal;
 
 Auth::routes(
     [

@@ -18,7 +18,7 @@ class ConfirmPasswordController extends Controller
 
     public function showConfirmForm()
     {
-        return view('sendportal::auth.passwords.confirm');
+        return view('auth.passwords.confirm');
     }
 
     protected function redirectTo(): string

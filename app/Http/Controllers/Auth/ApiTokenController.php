@@ -11,7 +11,7 @@ use Exception;
 use Illuminate\Contracts\View\View;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Str;
-use Sendportal\Base\Facades\Sendportal;
+use App\Facades\Sendportal;
 
 class ApiTokenController extends Controller
 {

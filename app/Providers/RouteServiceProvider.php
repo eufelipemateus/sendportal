@@ -6,6 +6,8 @@ namespace App\Providers;
 
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
 use Illuminate\Support\Facades\Route;
+use App\Routes\ApiRoutes;
+use App\Routes\WebRoutes;
 
 class RouteServiceProvider extends ServiceProvider
 {
@@ -35,6 +37,9 @@ class RouteServiceProvider extends ServiceProvider
         //
 
         parent::boot();
+
+        Route::mixin(new ApiRoutes());
+        Route::mixin(new WebRoutes());
     }
 
     /**

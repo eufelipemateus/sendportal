@@ -166,8 +166,11 @@ return [
         /*
          * Package Service Providers...
          */
-        Sendportal\Base\Providers\SendportalAppServiceProvider::class,
-        Sendportal\Base\SendportalBaseServiceProvider::class,
+        App\Providers\SendportalAppServiceProvider::class,
+        App\Providers\EventServiceProvider::class,
+        App\Providers\FormServiceProvider::class,
+        App\Providers\RouteServiceProvider::class,
+        App\Providers\ResolverProvider::class,
 
         /*
          * Application Service Providers...
