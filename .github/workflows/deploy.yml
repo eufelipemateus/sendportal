@@ -104,7 +104,7 @@ jobs:
           username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
-            cp -TRv /tmp/pixelfed/ ${{secrets.WORK_DIR}}/
+            cp -TRv /tmp/sendportal/ ${{secrets.WORK_DIR}}/
             sudo chmod 777 -R ${{secrets.WORK_DIR}}
             sudo chown www-data:www-data -R ${{secrets.WORK_DIR}}
             cd ${{secrets.WORK_DIR}}
