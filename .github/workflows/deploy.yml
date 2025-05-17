@@ -45,15 +45,15 @@ jobs:
             echo "DB_USERNAME=\"${{secrets.DB_USERNAME}}\"" >> .env
             echo "DB_PASSWORD=\"${{secrets.DB_PASSWORD}}\"" >> .env
 
-            echo "BROADCAST_DRIVER=log" >> .env
-            echo "CACHE_DRIVER=redis" >> .env
-            echo "QUEUE_CONNECTION=sync" >> .env
-            echo "SESSION_DRIVER=redis" >> .env
-            echo "SESSION_LIFETIME=120" >> .env
+            echo "#BROADCAST_DRIVER=log" >> .env
+            echo "#CACHE_DRIVER=redis" >> .env
+            echo "#QUEUE_CONNECTION=sync" >> .env
+            echo "#SESSION_DRIVER=redis" >> .env
+            echo "#SESSION_LIFETIME=120" >> .env
 
-            echo "REDIS_HOST=127.0.0.1" >> .env
-            echo "REDIS_PASSWORD=null" >> .env
-            echo "REDIS_PORT=6379" >> .env
+            echo "#REDIS_HOST=127.0.0.1" >> .env
+            echo "#REDIS_PASSWORD=null" >> .env
+            echo "#REDIS_PORT=6379" >> .env
 
             echo "AWS_ACCESS_KEY_ID=" >> .env
             echo "AWS_SECRET_ACCESS_KEY=" >> .env
